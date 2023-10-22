@@ -1,0 +1,28 @@
+function bubbleSort(arr) {
+  var len = arr.length;
+
+  for (var i = 0; i < len - 1; i++) {
+    for (var j = 0; j < len - 1 - i; j++) {
+      if (arr[j] < arr[j + 1]) {
+        // Swap elements if they are in the wrong order
+        var temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+}
+
+// Ask the user for input and split it into an array of numbers
+var input = prompt("Enter a list of numbers separated by spaces:");
+var numbers = input.split(' ').map(Number);
+
+if (!numbers.some(isNaN)) {
+  // Call the bubbleSort function to sort the array
+  bubbleSort(numbers);
+
+  // Display the sorted array in descending order
+  alert("Sorted Array (Descending Order): " + numbers.join(' '));
+} else {
+  alert("Invalid input. Please enter a list of numbers separated by spaces.");
+}

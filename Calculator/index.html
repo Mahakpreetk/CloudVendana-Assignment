@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="Container">
+      <form name="calculator">
+        <div class="clear">
+          <input type="text" class="result" name="answer" readonly />
+          <input
+            type="button"
+            class="clear"
+            value=" AC "
+            onclick="calculator.answer.value = ''"
+          />
+        </div>
+        <div class="grid-buttons">
+          <input type="button" value="9" />
+          <input type="button" value="8" />
+          <input type="button" value="7" />
+          <input type="button" value="+" class="math" />
+          <br />
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input type="button" value="-" class="math" />
+          <br />
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+          <input type="button" value="/" class="math" />
+          <br />
+          <input type="button" value="." />
+          <input type="button" value="0" />
+          <input type="button" value="=" />
+          <input type="button" value="*" class="math" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
